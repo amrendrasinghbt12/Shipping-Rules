@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <artmultishippingcharges>
+            <!-- <general>
+                <enable>1</enable>
+            </general> -->
+            <shippingrule>
+            	<excluded_product_charges_fix>0</excluded_product_charges_fix>
+                <excluded_product_charges_percent>0</excluded_product_charges_percent>
+            </shippingrule>
+        </artmultishippingcharges>
+    </default>
+</config>

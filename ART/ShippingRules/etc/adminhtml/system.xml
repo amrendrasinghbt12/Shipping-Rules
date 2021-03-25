@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="artmultishippingcharges" translate="label" sortOrder="1">
+            <label>ART</label>
+        </tab>
+        <section id="artmultishippingcharges" translate="label" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Shipping Charges</label>
+            <tab>artmultishippingcharges</tab>
+            <resource>ART_ShippingRules::artmultishippingcharges_config</resource>
+            <!-- <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Multi Shipping Charges</label>
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group> -->
+            <group id="shippingrule" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Shipping Charge for Excluded Products in MageWorx Rules</label>
+                <field id="excluded_product_charges_fix" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Per Product Charge (Fixed)</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+                <field id="excluded_product_charges_percent" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Per Product Charge (Percent)</label>
+                    <validate>validate-number validate-zero-or-greater</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

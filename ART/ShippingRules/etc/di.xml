@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="add_description_to_method" type="ART\ShippingRules\Model\Plugin\Checkout\ShippingInformationManagement" disabled="false" sortOrder="999"/>
+    </type>
+    <preference for="Magento\Quote\Model\Quote\Address\Total\Shipping" type="ART\ShippingRules\Model\Quote\Address\Total\Shipping" />
+
+    <preference for="MageWorx\ShippingRules\Model\Rule\Action\Rate\PerProduct" type="ART\ShippingRules\Model\Rule\Action\Rate\PerProduct" />
+</config>

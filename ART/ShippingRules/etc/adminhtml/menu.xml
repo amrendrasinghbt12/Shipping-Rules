@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+*
+*/
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<!--for the Nedina Menu configuration-->
+		<add id="Magento_Backend::art" title="ART" module="Magento_Backend" sortOrder="11" resource="Magento_Backend::art"/>
+
+		<!--for the Night Delivery configuration-->
+		<add id="ART_ShippingRules::externalimport" title="Import External Customer" module="ART_ShippingRules" sortOrder="1" parent="Magento_Backend::art" action="shippingrules/Import/Index" resource="ART_ShippingRules::externalimport"/>
+
+	</menu>
+</config>
